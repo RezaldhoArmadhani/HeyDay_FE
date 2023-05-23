@@ -151,4 +151,4 @@ Contributions are what make the open source community such an amazing place to b
 
 :rocket: [`Belum Deploy`]
 
-Project Link: [https://github.com/RezaldhoArmadhani/Blanja-FE](https://github.com/RezaldhoArmadhani/HeyDay_FE)
+Project Link: [https://github.com/RezaldhoArmadhani/HeyDay_FE](https://github.com/RezaldhoArmadhani/HeyDay_FE)
