@@ -1,38 +1,154 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+<div align="center">
+  <img height="150" src="./doc/Andika.jpg" alt="heyday-logo" border="0"/>
+</div>
+  <h3 align="center">HeyDay App</h3>
+  <p align="center">
+    <a href="https://RezaldhoArmadhani/Heyday_FE"><strong>Explore the docs »</strong></a>
+    <br />
+    <a href="">Belum Deploy</a>
+    <br />
+    <a href="">Belum Deploy</a>
+  </p>
+</p>
+
+<!-- TABLE OF CONTENTS -->
+
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Setup .env](#setup-env)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [Related Project](#related-project)
+- [Contact](#contact)
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+HeyDay adalah aplikasi perekrutan yang dirancang untuk membantu pengguna menemukan pekerjaan dengan lebih mudah melalui aplikasi tersebut. Aplikasi ini memungkinkan pengguna untuk membuat profil profesional, dan mencari pekerjaan, serta menerima notifikasi tentang pekerjaan yang sesuai dengan kriteria yang telah ditentukan. HeyDay juga menyediakan fitur interaksi antara pengguna dengan perekrut atau perusahaan yang sedang mencari tenaga kerja untuk memudahkan proses komunikasi dan seleksi. Dengan menggunakan HeyDay, pengguna dapat memaksimalkan peluang mereka untuk mendapatkan pekerjaan yang diinginkan secara efektif dan efisien.
+
+<!-- GETTING STARTED -->
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+This is an example of how to list things you need to use the software and how to install them.
+
+- [nodejs](https://nodejs.org/en/download/)
+- [Bootstrap Css](https://getbootstrap.com/)
+- [React JS](https://reactjs.org/)
+- [Redux](https://redux.js.org/)
+
+### Installation
+
+- Clone This Front End Repo
+
+```
+git clone https://github.com/RezaldhoArmadhani/HeyDay_FE
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Go To Folder Repo
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+cd ui
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Install Module
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- <a href="#setup-env">Setup .env</a>
+- Type ` npm run start` To Start Website
 
-## Learn More
+### Setup .env
 
-To learn more about Next.js, take a look at the following resources:
+Create .env file in your root project folder.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+REACT_APP_ENDPOINT = [BACKEND_URL]
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<!-- ROADMAP -->
 
-## Deploy on Vercel
+## Screenshots
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<table>
+ <tr>
+    <td><img width="350px" src="./doc/login.png"  border="0" border="0" alt="1" /></td>
+    <td> <img width="350px" src="./doc/register.png" \ border="0"  border="0"  border="0"  alt="2" /></td>
+  </tr>
+   <tr>
+    <td>Login</td>
+    <td>Register</td>
+  </tr>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  <tr>
+    <td><img width="350px" src="./doc/landing.png"  border="0" border="0" alt="3" /> </td>
+     <td><img width="350px" src="./doc/detail.png"  border="0" border="0" alt="4" /></td>
+  </tr>
+   <tr>
+    <td>Landing</td>
+    <td>Detail</td>
+  </tr>
+  <tr>
+    <td><img width="350px" src="./doc/profile-seller.png"  border="0" border="0" alt="3" /> </td>
+    <td><img width="350px" src="./doc/profile-customer.png"  border="0" border="0" alt="4" /></td>
+  </tr>
+   <tr>
+    <td>Profile Seller</td>
+    <td>Profile Customer</td>
+  </tr>
+   <tr>
+    <td><img width="350px" src="./doc/mybag.png"  border="0" border="0" alt="3" /> </td>
+    <td><img width="350px" src="./doc/checkout.png"  border="0" border="0" alt="4" /></td>
+  </tr>
+   <tr>
+    <td>Mybag</td>
+    <td>Checkout</td>
+  </tr>
+   <tr>
+    <td><img width="350px" src="./doc/address.png"  border="0" border="0" alt="3" /> </td>
+    <td><img width="350px" src="./doc/add-product.png"  border="0" border="0" alt="4" /></td>
+  </tr>
+   <tr>
+    <td>Address</td>
+    <td>Add Product</td>
+  </tr>
+  <tr>
+    <td><img width="350px" src="./doc/update-product.png"  border="0" border="0" alt="4" /></td>
+  </tr>
+   <tr>
+    <td>Update Product</td>
+  </tr>
+</table>
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## Related Project
+
+:rocket: [`Backend HeyDay`](https://github.com/RezaldhoArmadhani/HeyDay_BE)
+
+:rocket: [`Frontend HeyDay`](https://RezaldhoArmadhani/HeyDay_FE)
+
+:rocket: [`Belum Deploy`]
+
+Project Link: [https://github.com/RezaldhoArmadhani/Blanja-FE](https://github.com/RezaldhoArmadhani/HeyDay_FE)
