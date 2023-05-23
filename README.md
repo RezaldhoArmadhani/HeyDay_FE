@@ -1,6 +1,6 @@
 <p align="center">
 <div align="center">
-  <img height="150" src="./doc/Andika.jpg" alt="heyday-logo" border="0"/>
+  <img height="150" src="./doc/earlybirds_icon.png" alt="heyday-logo" border="0"/>
 </div>
   <h3 align="center">HeyDay App</h3>
   <p align="center">
