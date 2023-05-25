@@ -28,7 +28,7 @@ const NavbarProfile = ({ id }) => {
     setProfile(localStorage.getItem("id"));
     setRole(localStorage.getItem("role"));
     console.log(localStorage.getItem("id"));
-  });
+  }, []);
 
   // const [item, setItem] = useState(['']);
 

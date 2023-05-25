@@ -112,7 +112,7 @@ const Login = () => {
             style={{ textDecoration: "none", color: "rgb(88, 85, 173)" }}
           >
             {" "}
-            Sign Up
+            Register Worker Here
           </Link>
         </p>
       </div>

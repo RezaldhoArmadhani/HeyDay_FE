@@ -12,25 +12,15 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const router = useRouter();
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   const res = await axios.post('http://localhost:3020/login', { email, password});
-
-  //   localStorage.setItem('user', 'user');
-
-  //   if (localStorage.getItem('user')) {
-
-  //       alert('success')
-  //       router.push('/')
-  //   }
-  // }
-
-  const handleSubmit = async (e) => {
+  const handleSubmitRecruiter = async (e) => {
     e.preventDefault();
-    const response = await axios.post(`http://localhost:4000/workers/login`, {
-      email,
-      password,
-    });
+    const response = await axios.post(
+      `http://localhost:4000/recruiters/login`,
+      {
+        email,
+        password,
+      }
+    );
     // console.log(response);
     // console.log(response.data.data.token);
 
@@ -41,7 +31,7 @@ const Login = () => {
           icon: "success",
         });
         const token = response.data.data.token;
-        const id = response.data.data.id_worker;
+        const id = response.data.data.id_recruiter;
         const role = response.data.data.role;
         // const image = response.data.data.image;
 
@@ -70,7 +60,7 @@ const Login = () => {
       title="Welcome"
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod ipsum et dui rhoncus auctor."
     >
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmitRecruiter}>
         <InputFormAuth
           title="Email"
           name="email"
@@ -94,6 +84,7 @@ const Login = () => {
           </button>
         </div>
       </form>
+
       <div className="forgotPassword text-end mb-3">
         <Link
           to={"/forgot-password"}
@@ -112,7 +103,7 @@ const Login = () => {
             style={{ textDecoration: "none", color: "rgb(88, 85, 173)" }}
           >
             {" "}
-            Register
+            Register Recruiter Here
           </Link>
         </p>
       </div>

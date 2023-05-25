@@ -40,6 +40,7 @@ const LandingPage = () => {
                 <div className={style.box1} />
                 <Image
                   className={`${style.imgSection} img-fluid`}
+                  alt="photo"
                   src={img}
                 ></Image>
               </div>
@@ -55,6 +56,7 @@ const LandingPage = () => {
               <div className={style.box2} />
               <Image
                 className={`img-fluid ${style.imgSection2}`}
+                alt="photo"
                 src={img2}
               ></Image>
             </div>
@@ -196,6 +198,7 @@ const LandingPage = () => {
               <div className={style.box3} />
               <Image
                 className={`${style.imgSection3} img-fluid`}
+                alt="photo"
                 src={img3}
               ></Image>
             </div>

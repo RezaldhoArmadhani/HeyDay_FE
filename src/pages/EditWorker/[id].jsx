@@ -239,6 +239,7 @@ const EditProfile = () => {
                       width={150}
                       height={150}
                       crossOrigin="anonymous"
+                      alt="photo"
                       src={worker?.image === null ? "" : worker?.image}
                       className="img-thumbnail rounded-circle"
                     ></Image>
@@ -434,16 +435,16 @@ const EditProfile = () => {
                     <InputFormEdit
                       type={"text"}
                       title={"Nama aplikasi"}
-                      value={portfolio?.name_portfolio}
-                      name={"name_portfolio"}
+                      value={portfolio?.name}
+                      name={"name"}
                       placeholder={"Masukan nama aplikasi"}
                       onchange={changePortfolio}
                     />
                     <InputFormEdit
                       type={"text"}
                       title={"Link Repository"}
-                      value={portfolio?.repo_link}
-                      name={"repo_link"}
+                      value={portfolio?.repository}
+                      name={"repository"}
                       placeholder={"Masukan link repository"}
                       onchange={changePortfolio}
                     />

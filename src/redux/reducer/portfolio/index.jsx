@@ -1,16 +1,18 @@
 const initialState = {
-    portfolio: [],
-    // detailRecipe: [],
-    // comment: [],
-  };
-  
-  export const portfolioReducer = (state = initialState, action) => {
-    if (action.type === "GET_PORTFOLIO_BY_USER") {
-      return {
-        ...state,
-        skills: action.payload,
-        isLoading: false,
-      };
+  portfolio: [],
+  // detailRecipe: [],
+  // comment: [],
+};
+
+export const portfolioReducer = (state = initialState, action) => {
+  if (action.type === "GET_PORTFOLIO_BY_USER") {
+    return {
+      ...state,
+      skills: action.payload,
+      isLoading: false,
+    };
+  } else if (action.type === "CREATE_PORTFOLIO") {
+    return state;
     // } else if (action.type === "getAllRecipePopular") {
     //   return {
     //     ...state,
@@ -39,8 +41,7 @@ const initialState = {
     //     comment: action.payload,
     //     isLoading: false,
     //   };
-    } else {
-      return state;
-    }
-  };
-  
+  } else {
+    return state;
+  }
+};

@@ -16,7 +16,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@next/font": "13.1.6",
     "@react-yuki/ui": "^0.0.44",
-    "@reduxjs/toolkit": "^1.9.3",
+    "@reduxjs/toolkit": "^1.9.5",
     "aos": "^3.0.0-beta.6",
     "axios": "^1.3.4",
     "bootstrap": "^5.2.3",

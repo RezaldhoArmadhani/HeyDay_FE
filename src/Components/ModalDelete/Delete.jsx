@@ -2,7 +2,7 @@ import React, { Fragment, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-const Delete = ({id, name, children, embedClass, sty}) => {
+const Delete = ({ id, name, children, embedClass, sty, onclick }) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -28,7 +28,7 @@ const Delete = ({id, name, children, embedClass, sty}) => {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="danger">
+          <Button variant="danger" onClick={onclick}>
             Delete
           </Button>
         </Modal.Footer>

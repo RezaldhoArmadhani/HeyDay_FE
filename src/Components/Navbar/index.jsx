@@ -27,7 +27,7 @@ const Navbar = () => {
   useEffect(() => {
     setLogin(localStorage.getItem("token"));
     setProfile(localStorage.getItem("id"));
-  });
+  }, []);
 
   return (
     <>

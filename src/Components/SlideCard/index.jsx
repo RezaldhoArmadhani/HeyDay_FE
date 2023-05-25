@@ -3,7 +3,7 @@ import Image from "next/image";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import style from "./slide.module.css";
-import img from "../../Assets/Home/imgSection5.jpg";
+// import img from "../../Assets/Home/imgSection5.jpg";
 import { getWorkers } from "@/redux/actions/workerActions";
 import { useDispatch } from "react-redux";
 
@@ -62,8 +62,8 @@ export default function App() {
         modules={[Navigation, Pagination]}
         className="mySwiper swiper-container"
       >
-        {worker.map((item) => (
-          <div className="swiper-container">
+        {worker.map((item, i) => (
+          <div key={i} className="swiper-container">
             <div className="swiper-wrapper">
               <SwiperSlide className="swiper-slide">
                 <div className={style.card}>
@@ -72,6 +72,7 @@ export default function App() {
                       crossOrigin="anonymouse"
                       width={150}
                       height={150}
+                      alt="photo"
                       src={worker?.image}
                       className={style.cardImg}
                     />

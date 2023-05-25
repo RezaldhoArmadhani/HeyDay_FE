@@ -2,7 +2,7 @@ import LayoutLoginProfile from "@/Components/LayoutPage/LayoutLoginProfil";
 import SectionPage from "@/Components/Section/LandingPage/SectionPage";
 import Image from "next/image";
 import style from "./style.module.css";
-import img from "../../Assets/Home/imgSection5.jpg";
+import img from "../../Assets/Home/imgSection3.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLocationDot,
@@ -29,24 +29,120 @@ import { getDetailWorker } from "@/redux/actions/workerActions";
 import { getSkillByUser } from "@/redux/actions/skillAction";
 import { getPortfolioByUser } from "@/redux/actions/portfolioAction";
 import { getExperienceByUser } from "@/redux/actions/experienceAction";
+import {
+  useDeleteExperienceMutation,
+  useGetExperienceByIdQuery,
+} from "@/features/experience/experienceApi";
+import {
+  useDeletePortfolioMutation,
+  useGetPortfolioByIdQuery,
+} from "@/features/portfolio/portfolioApi";
+import { useGetWorkerByIdQuery } from "@/features/worker/workerApi";
+import {
+  useDeleteSkillsMutation,
+  useGetSkillsByIdQuery,
+} from "@/features/skill/skillsApi";
+import { useGetWorkerProfileQuery } from "@/features/auth/Worker/authApi";
 
 const Profile = () => {
+  // const router = useRouter();
+  // const { id } = router.query;
+  // const dispatch = useDispatch();
+  // const [isShow, setIsShow] = useState(false);
+  // const [worker, setWorker] = useState([{}]);
+  // const [skill, setSkill] = useState([{}]);
+  // const [portfolio, setPortfolio] = useState([{}]);
+  // const [experience, setExperience] = useState([{}]);
+  // const [
+  //   deletePortfolio,
+  //   {
+  //     isSuccess: isSuccessDeletePortfolio,
+  //     isLoading: isLoadingDeletePortfolio,
+  //     isError: isErrorDeletePortfolio,
+  //   },
+  // ] = useDeletePortfolioMutation();
+  // console.log(worker);
+
+  // const handlePortfolioDelete = async (id) => {
+  //   await deletePortfolio(id);
+  // };
+
+  // useEffect(() => {
+  //   dispatch(getDetailWorker(setWorker, id));
+  //   dispatch(getSkillByUser(setSkill, id));
+  //   dispatch(getPortfolioByUser(setPortfolio, id));
+  //   dispatch(getExperienceByUser(setExperience, id));
+  // }, [dispatch, id]);
+
   const router = useRouter();
   const { id } = router.query;
-  const dispatch = useDispatch();
   const [isShow, setIsShow] = useState(false);
-  const [worker, setWorker] = useState([{}]);
-  const [skill, setSkill] = useState([{}]);
-  const [portfolio, setPortfolio] = useState([{}]);
-  const [experience, setExperience] = useState([{}]);
-  console.log(worker);
+  const [role, setRole] = useState("");
+
+  // Get datas
+  const { data: worker } = useGetWorkerByIdQuery(id);
+  const { data: skill } = useGetSkillsByIdQuery(id);
+  const { data: portfolio, isLoading } = useGetPortfolioByIdQuery(id);
+  const { data: experience } = useGetExperienceByIdQuery(id);
+  const { data: workerDetail } = useGetWorkerProfileQuery();
+  const [
+    deletePortfolio,
+    {
+      isSuccess: isSuccessDeletePortfolio,
+      isLoading: isLoadingDeletePortfolio,
+      isError: isErrorDeletePortfolio,
+    },
+  ] = useDeletePortfolioMutation();
+  const [
+    deleteExperience,
+    {
+      isSuccess: isSuccessDeleteExp,
+      isLoading: isLoadingDeleteExp,
+      isError: isErrorDeleteExp,
+    },
+  ] = useDeleteExperienceMutation();
+  const [deleteSkill] = useDeleteSkillsMutation();
+
+  // Handle Delete Experience and Portfolio
+
+  const handlePortfolioDelete = async (id) => {
+    await deletePortfolio(id);
+  };
+  const handleExpDelete = async (id) => {
+    await deleteExperience(id);
+  };
+  const handleDeleteSkill = async (id) => {
+    await deleteSkill(id);
+  };
+
+  // --------------------------------------
 
   useEffect(() => {
-    dispatch(getDetailWorker(setWorker, id));
-    dispatch(getSkillByUser(setSkill, id));
-    dispatch(getPortfolioByUser(setPortfolio, id));
-    dispatch(getExperienceByUser(setExperience, id));
-  }, [dispatch, id]);
+    setRole(localStorage.getItem("role"));
+  }, [role]);
+
+  // Edited portfolio
+
+  useEffect(() => {
+    if (isLoadingDeletePortfolio || isLoadingDeleteExp)
+      return showLoading("Please wait ...");
+    if (isSuccessDeletePortfolio || isSuccessDeleteExp)
+      return successLoading(
+        Swal.fire({
+          title: "Success delete portfolio",
+          icon: "success",
+        })
+      );
+    if (isErrorDeletePortfolio || isErrorDeleteExp)
+      return failedLoading("Error deleting portfolio");
+  }, [
+    isLoadingDeletePortfolio,
+    isSuccessDeletePortfolio,
+    isErrorDeletePortfolio,
+    isLoadingDeleteExp,
+    isSuccessDeleteExp,
+    isErrorDeleteExp,
+  ]);
 
   return (
     <LayoutLoginProfile id={id}>
@@ -59,9 +155,10 @@ const Profile = () => {
             <div className="profileDesc">
               <div className={` mx-auto pb-4 pt-2 ${style.picture}`}>
                 <Image
-                  // crossOrigin="anonymouse"
+                  crossOrigin="Anonymous"
                   width={150}
                   height={150}
+                  alt="photo"
                   src={worker?.image === null ? "" : worker?.image}
                   className="img-thumbnail rounded-circle"
                 ></Image>
@@ -181,7 +278,10 @@ const Profile = () => {
                             </Edit>
                             <Delete
                               embedClass={style.btnDeletePortfolio}
-                              id={ex.id}
+                              id={ex.id_portfolio}
+                              onclick={() =>
+                                handlePortfolioDelete(ex?.id_portfolio)
+                              }
                             >
                               <FontAwesomeIcon
                                 icon={faTrash}
@@ -194,7 +294,14 @@ const Profile = () => {
                           </div>
                         )}
 
-                        <Image src={img1} className={style.img} />
+                        <Image
+                          crossOrigin="Anonymous"
+                          alt="photo"
+                          src={ex?.image === undefined ? img1 : ex?.image}
+                          width={100}
+                          height={100}
+                          className={style.img}
+                        />
                         <p className="pt-4">{ex.name_portfolio}</p>
                       </div>
                     </div>
@@ -219,8 +326,12 @@ const Profile = () => {
                       >
                         <div className="col-2">
                           <Image
-                            className="img-fluid"
-                            src={Experience}
+                            className="img-fluid imgExperience"
+                            src={
+                              ex?.image === undefined ? Experience : ex?.image
+                            }
+                            width={80}
+                            height={80}
                             alt=""
                           ></Image>
                         </div>
