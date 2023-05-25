@@ -19,7 +19,7 @@ import img1 from "../../Assets/Profile/porto-1.png";
 import MainProfile from "@/Components/LayoutProfile/MainProfile";
 import LeftSide from "@/Components/LayoutProfile/LeftSide";
 import RightSide from "@/Components/LayoutProfile/RightSide";
-import Experience from "../../Assets/Profile/Experience/icon.png";
+import Experience from "../../Assets/Profile/Experience/Icon.png";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Delete from "@/Components/ModalDelete/Delete";
