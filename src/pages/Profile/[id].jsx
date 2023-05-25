@@ -45,35 +45,6 @@ import {
 import { useGetWorkerProfileQuery } from "@/features/auth/Worker/authApi";
 
 const Profile = () => {
-  // const router = useRouter();
-  // const { id } = router.query;
-  // const dispatch = useDispatch();
-  // const [isShow, setIsShow] = useState(false);
-  // const [worker, setWorker] = useState([{}]);
-  // const [skill, setSkill] = useState([{}]);
-  // const [portfolio, setPortfolio] = useState([{}]);
-  // const [experience, setExperience] = useState([{}]);
-  // const [
-  //   deletePortfolio,
-  //   {
-  //     isSuccess: isSuccessDeletePortfolio,
-  //     isLoading: isLoadingDeletePortfolio,
-  //     isError: isErrorDeletePortfolio,
-  //   },
-  // ] = useDeletePortfolioMutation();
-  // console.log(worker);
-
-  // const handlePortfolioDelete = async (id) => {
-  //   await deletePortfolio(id);
-  // };
-
-  // useEffect(() => {
-  //   dispatch(getDetailWorker(setWorker, id));
-  //   dispatch(getSkillByUser(setSkill, id));
-  //   dispatch(getPortfolioByUser(setPortfolio, id));
-  //   dispatch(getExperienceByUser(setExperience, id));
-  // }, [dispatch, id]);
-
   const router = useRouter();
   const { id } = router.query;
   const [isShow, setIsShow] = useState(false);
