@@ -1,14 +1,14 @@
 <p align="center">
 <div align="center">
-  <img height="150" src="./doc/earlybirds_icon.png" alt="heyday-logo" border="0"/>
+  <img height="150" src="./doc/Logoo.png" alt="heyday-logo" border="0"/>
 </div>
   <h3 align="center">HeyDay App</h3>
   <p align="center">
     <a href="https://RezaldhoArmadhani/Heyday_FE"><strong>Explore the docs »</strong></a>
     <br />
-    <a href="">Belum Deploy</a>
+    <a href="https://hey-day-fe.vercel.app/">View Demo</a>
     <br />
-    <a href="">Belum Deploy</a>
+    <a href="heydaybe-production.up.railway.app">Api Demo</a>
   </p>
 </p>
 
@@ -32,7 +32,7 @@
 
 ## About The Project
 
-HeyDay adalah aplikasi perekrutan yang dirancang untuk membantu pengguna menemukan pekerjaan dengan lebih mudah melalui aplikasi tersebut. Aplikasi ini memungkinkan pengguna untuk membuat profil profesional, dan mencari pekerjaan, serta menerima notifikasi tentang pekerjaan yang sesuai dengan kriteria yang telah ditentukan. HeyDay juga menyediakan fitur interaksi antara pengguna dengan perekrut atau perusahaan yang sedang mencari tenaga kerja untuk memudahkan proses komunikasi dan seleksi. Dengan menggunakan HeyDay, pengguna dapat memaksimalkan peluang mereka untuk mendapatkan pekerjaan yang diinginkan secara efektif dan efisien.
+HeyDay is a recruiting application designed to help users find jobs more easily through the application. This application allows users to create professional profiles, and search for jobs, and receive notifications about jobs that match predetermined criteria. HeyDay also provides an interaction feature between users and recruiters or companies looking for workers to facilitate the communication and selection process. By using HeyDay, users can maximize their chances of getting the desired job effectively and efficiently.
 
 <!-- GETTING STARTED -->
 
@@ -58,7 +58,7 @@ git clone https://github.com/RezaldhoArmadhani/HeyDay_FE
 - Go To Folder Repo
 
 ```
-cd ui
+cd HeyDay_FE
 ```
 
 - Install Module
@@ -149,6 +149,6 @@ Contributions are what make the open source community such an amazing place to b
 
 :rocket: [`Frontend HeyDay`](https://RezaldhoArmadhani/HeyDay_FE)
 
-:rocket: [`Belum Deploy`]
+:rocket: [`Demo HeyDay`](https://hey-day-fe.vercel.app/)
 
 Project Link: [https://github.com/RezaldhoArmadhani/HeyDay_FE](https://github.com/RezaldhoArmadhani/HeyDay_FE)
