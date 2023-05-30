@@ -110,7 +110,7 @@ REACT_APP_ENDPOINT = [BACKEND_URL]
   </tr>
    <tr>
     <td><img width="350px" src="./doc/Edit Worker.png"  border="0" border="0" alt="3" /> </td>
-    <td><img width="350px" src="./doc/aaaaa.png"  border="0" border="0" alt="4" /></td>
+    <td><img width="350px" src="./doc/Experience.png"  border="0" border="0" alt="4" /></td>
   </tr>
    <tr>
     <td>Edit Worker</td>
