@@ -84,8 +84,8 @@ REACT_APP_ENDPOINT = [BACKEND_URL]
 
 <table>
  <tr>
-    <td><img width="350px" src="./doc/login.png"  border="0" border="0" alt="1" /></td>
-    <td> <img width="350px" src="./doc/register.png" \ border="0"  border="0"  border="0"  alt="2" /></td>
+    <td><img width="350px" src="./doc/Login.png"  border="0" border="0" alt="1" /></td>
+    <td> <img width="350px" src="./doc/Register.png" \ border="0"  border="0"  border="0"  alt="2" /></td>
   </tr>
    <tr>
     <td>Login</td>
@@ -93,42 +93,42 @@ REACT_APP_ENDPOINT = [BACKEND_URL]
   </tr>
 
   <tr>
-    <td><img width="350px" src="./doc/landing.png"  border="0" border="0" alt="3" /> </td>
-     <td><img width="350px" src="./doc/detail.png"  border="0" border="0" alt="4" /></td>
+    <td><img width="350px" src="./doc/Landing.png"  border="0" border="0" alt="3" /> </td>
+     <td><img width="350px" src="./doc/Search Worker.png"  border="0" border="0" alt="4" /></td>
   </tr>
    <tr>
     <td>Landing</td>
-    <td>Detail</td>
+    <td>Search Worker</td>
   </tr>
   <tr>
-    <td><img width="350px" src="./doc/profile-seller.png"  border="0" border="0" alt="3" /> </td>
-    <td><img width="350px" src="./doc/profile-customer.png"  border="0" border="0" alt="4" /></td>
+    <td><img width="350px" src="./doc/Profile Worker.png"  border="0" border="0" alt="3" /> </td>
+    <td><img width="350px" src="./doc/Profile Recruiter.png"  border="0" border="0" alt="4" /></td>
   </tr>
    <tr>
-    <td>Profile Seller</td>
-    <td>Profile Customer</td>
+    <td>Profile Worker</td>
+    <td>Profile Recruiter</td>
   </tr>
    <tr>
-    <td><img width="350px" src="./doc/mybag.png"  border="0" border="0" alt="3" /> </td>
-    <td><img width="350px" src="./doc/checkout.png"  border="0" border="0" alt="4" /></td>
+    <td><img width="350px" src="./doc/Edit Worker.png"  border="0" border="0" alt="3" /> </td>
+    <td><img width="350px" src="./doc/aaaaa.png"  border="0" border="0" alt="4" /></td>
   </tr>
    <tr>
-    <td>Mybag</td>
-    <td>Checkout</td>
+    <td>Edit Worker</td>
+    <td>Experience</td>
   </tr>
    <tr>
-    <td><img width="350px" src="./doc/address.png"  border="0" border="0" alt="3" /> </td>
-    <td><img width="350px" src="./doc/add-product.png"  border="0" border="0" alt="4" /></td>
+    <td><img width="350px" src="./doc/Add Portfolio.png"  border="0" border="0" alt="3" /> </td>
+    <td><img width="350px" src="./doc/Add Experience.png"  border="0" border="0" alt="4" /></td>
   </tr>
    <tr>
-    <td>Address</td>
-    <td>Add Product</td>
+    <td>Add Portfolio</td>
+    <td>Add Experience</td>
   </tr>
   <tr>
-    <td><img width="350px" src="./doc/update-product.png"  border="0" border="0" alt="4" /></td>
+    <td><img width="350px" src="./doc/Hire Button.png"  border="0" border="0" alt="4" /></td>
   </tr>
    <tr>
-    <td>Update Product</td>
+    <td>Hire Button</td>
   </tr>
 </table>
 <!-- CONTRIBUTING -->
