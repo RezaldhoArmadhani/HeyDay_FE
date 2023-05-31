@@ -8,7 +8,7 @@
     <br />
     <a href="https://hey-day-fe.vercel.app/">View Demo</a>
     <br />
-    <a href="heydaybe-production.up.railway.app">Api Demo</a>
+    <a href="https://heydaybe-production.up.railway.app">Api Demo</a>
   </p>
 </p>
 
