@@ -1,37 +1,42 @@
-import { apiSlice } from '../../app/api/authApi';
+import { apiSlice } from "../../app/api/authApi";
 
 export const workerApi = apiSlice.injectEndpoints({
-  tagTypes: ['getAllUser'],
+  tagTypes: ["getAllUser"],
   endpoints: (builder) => ({
     getAllUser: builder.query({
-      query: ({find}) => {
+      query: ({ find }) => {
         return {
-        url: `/?search=${find}`,
-      }},
+          url: `/?search=${find}`,
+        };
+      },
 
-      providesTags: ['getAllUser'],
+      providesTags: ["getAllUser"],
       transformResponse: (response, meta, args) => response.data,
-    }), 
+    }),
     getWorkerById: builder.query({
       query: (id) => ({
         url: `workers/${id}`,
       }),
 
-      providesTags: ['getWorkerById'],
+      providesTags: ["getWorkerById"],
       transformResponse: (response, meta, args) => response.data[0],
     }),
     updateWorkerById: builder.mutation({
       query: ({ id, data }) => {
         return {
           url: `workers/${id}`,
-          method: 'PUT',
+          method: "PUT",
           body: data,
         };
       },
-      invalidatesTags: ['getWorkerById'],
+      invalidatesTags: ["getWorkerById"],
       transformResponse: (response, meta, args) => response,
     }),
   }),
 });
 
-export const { useGetAllUserQuery, useGetWorkerByIdQuery, useUpdateWorkerByIdMutation } = workerApi;
+export const {
+  useGetAllUserQuery,
+  useGetWorkerByIdQuery,
+  useUpdateWorkerByIdMutation,
+} = workerApi;

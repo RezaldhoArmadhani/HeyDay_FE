@@ -51,11 +51,19 @@ const Profile = () => {
   const [role, setRole] = useState("");
 
   // Get datas
-  const { data: worker } = useGetWorkerByIdQuery(id);
-  const { data: skill } = useGetSkillsByIdQuery(id);
-  const { data: portfolio, isLoading } = useGetPortfolioByIdQuery(id);
-  const { data: experience } = useGetExperienceByIdQuery(id);
-  const { data: workerDetail } = useGetWorkerProfileQuery();
+  const { data: worker } = useGetWorkerByIdQuery(id, {
+    skip: id ? false : true,
+  });
+  const { data: skill } = useGetSkillsByIdQuery(id, {
+    skip: id ? false : true,
+  });
+  const { data: portfolio, isLoading } = useGetPortfolioByIdQuery(id, {
+    skip: id ? false : true,
+  });
+  const { data: experience } = useGetExperienceByIdQuery(id, {
+    skip: id ? false : true,
+  });
+  // const { data: workerDetail } = useGetWorkerProfileQuery();
   const [
     deletePortfolio,
     {
@@ -145,9 +153,9 @@ const Profile = () => {
               </p>
               <span className={style.worker}>{worker?.jobdesk}</span>
               <p className={style.bio}>{worker?.description}</p>
-              <div className="hireButton d-grid">
+              {/* <div className="hireButton d-grid">
                 <button className={`btn ${style.btn}`}> Hire</button>
-              </div>
+              </div> */}
             </div>
             <div className="skills pt-5">
               <h5 className="fw-bolder">Skills</h5>
@@ -273,12 +281,13 @@ const Profile = () => {
                           height={100}
                           className={style.img}
                         />
-                        <p className="pt-4">{ex.name_portfolio}</p>
+                        <p className="pt-4">{ex.name}</p>
                       </div>
                     </div>
                   ))}
                 </div>
               </div>
+
               <div
                 className="tab-pane fade"
                 id="pills-Seller"

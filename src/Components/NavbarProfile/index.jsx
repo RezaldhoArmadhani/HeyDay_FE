@@ -14,14 +14,15 @@ import img from "../../Assets/Home/imgSection2.png";
 import { useState, useEffect } from "react";
 import { faEarlybirds } from "@fortawesome/free-brands-svg-icons";
 import { useRouter } from "next/router";
+import { useGetWorkerByIdQuery } from "@/features/worker/workerApi";
 
 const NavbarProfile = ({ id }) => {
   const [login, setLogin] = useState("");
   const [profile, setProfile] = useState([]);
   const [role, setRole] = useState("");
   const router = useRouter();
-
-  console.log(profile);
+  const { data: worker } = useGetWorkerByIdQuery(profile);
+  console.log(worker);
 
   useEffect(() => {
     setLogin(localStorage.getItem("token"));
@@ -46,7 +47,7 @@ const NavbarProfile = ({ id }) => {
   //     }
 
   // }, []);
-
+  console.log(profile?.image);
   return (
     <>
       {login > 0 ? (
@@ -133,7 +134,7 @@ const NavbarProfile = ({ id }) => {
                   <Link href={`#`} className={style.profile}>
                     <Image
                       className={`${style.img} img-fluid`}
-                      src={profile?.image}
+                      src={worker?.image}
                       width={50}
                       height={50}
                       alt="photo"

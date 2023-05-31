@@ -120,7 +120,7 @@ const EditProfile = () => {
       formData.append("id_worker", id);
       formData.append("name", portfolio.name);
       formData.append("repository", portfolio.repository);
-      formData.append("type", portfolio.type);
+      // formData.append("type", portfolio.type);
       formData.append("image", saveImage);
 
       const result = await axios
@@ -261,7 +261,7 @@ const EditProfile = () => {
                       icon={faLocationDot}
                       style={{ marginRight: "10px" }}
                     />
-                    {worker?.place}
+                    {worker?.workplace}
                   </p>
                   <span className={style.worker}>{worker?.jobdesk}</span>
                 </div>
@@ -456,7 +456,7 @@ const EditProfile = () => {
                       onChange={handleUpload}
                     />
                     <div
-                      className={`d-md-flex d-grid d-block ${style.areaRadio}`}
+                      className={`d-md-flex d-grid d-block mt-4 ${style.areaRadio}`}
                     >
                       <label
                         className={`form-check-label mb-2 mb-md-0 me-md-2 me-0 ${style.radioLabel} d-flex align-items-center rounded border`}

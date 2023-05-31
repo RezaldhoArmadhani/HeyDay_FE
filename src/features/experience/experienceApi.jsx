@@ -1,37 +1,41 @@
-import { apiSlice } from '../../app/api/authApi';
+import { apiSlice } from "../../app/api/authApi";
 
 export const experienceApi = apiSlice.injectEndpoints({
-  tagTypes: ['getExperienceById'],
+  tagTypes: ["getExperienceById"],
   endpoints: (builder) => ({
     getExperienceById: builder.query({
       query: (id) => ({
-        url: `experience/worker/${id}`,
+        url: `experiences/worker/${id}`,
       }),
 
-      providesTags: ['getExperienceById'],
+      providesTags: ["getExperienceById"],
       transformResponse: (response, meta, args) => response.data,
-    }), 
+    }),
     createExperience: builder.mutation({
-      query: ({id, data}) => ({
+      query: ({ id, data }) => ({
         url: `experience/add/${id}`,
         method: "POST",
-        body: data
+        body: data,
       }),
 
-      providesTags: ['getExperienceById'],
+      providesTags: ["getExperienceById"],
       transformResponse: (response, meta, args) => response.data,
-    }), 
+    }),
     deleteExperience: builder.mutation({
       query: (id) => ({
         url: `experience/delete/${id}`,
         method: "DELETE",
       }),
 
-      providesTags: ['getExperienceById'],
-      invalidatesTags: ['getExperienceById', 'getWorkerById'],
+      providesTags: ["getExperienceById"],
+      invalidatesTags: ["getExperienceById", "getWorkerById"],
       transformResponse: (response, meta, args) => response.data,
-    }), 
+    }),
   }),
 });
 
-export const { useGetExperienceByIdQuery, useCreateExperienceMutation, useDeleteExperienceMutation } = experienceApi;
+export const {
+  useGetExperienceByIdQuery,
+  useCreateExperienceMutation,
+  useDeleteExperienceMutation,
+} = experienceApi;
