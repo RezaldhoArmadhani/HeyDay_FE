@@ -27,10 +27,13 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await axios.post(`http://localhost:4000/workers/login`, {
-      email,
-      password,
-    });
+    const response = await axios.post(
+      `https://heydaybe-production.up.railway.app/workers/login`,
+      {
+        email,
+        password,
+      }
+    );
     // console.log(response);
     // console.log(response.data.data.token);
 

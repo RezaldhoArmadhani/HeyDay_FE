@@ -153,9 +153,9 @@ const Profile = () => {
               </p>
               <span className={style.worker}>{worker?.jobdesk}</span>
               <p className={style.bio}>{worker?.description}</p>
-              {/* <div className="hireButton d-grid">
+              <div className="hireButton d-grid">
                 <button className={`btn ${style.btn}`}> Hire</button>
-              </div> */}
+              </div>
             </div>
             <div className="skills pt-5">
               <h5 className="fw-bolder">Skills</h5>
@@ -172,16 +172,16 @@ const Profile = () => {
             <div className="contact">
               <h5 className="fw-bolder pt-5 pb-2">Contact</h5>
               <p>
-                <FontAwesomeIcon icon={faGithub} /> github.rezaldhoarmadhani.com{" "}
+                <FontAwesomeIcon icon={faGithub} /> github.Worker.com{" "}
               </p>
               <p>
-                <FontAwesomeIcon icon={faFacebook} /> Rezaldho Armadhani
+                <FontAwesomeIcon icon={faFacebook} /> Facebook_Worker
               </p>
               <p>
-                <FontAwesomeIcon icon={faLinkedin} /> Rezaldho Armadhani
+                <FontAwesomeIcon icon={faLinkedin} /> LinkedIn_Worker
               </p>
               <p>
-                <FontAwesomeIcon icon={faInstagram} /> Rezaldho Armadhani
+                <FontAwesomeIcon icon={faInstagram} /> Instagram_Worker
               </p>
             </div>
           </LeftSide>

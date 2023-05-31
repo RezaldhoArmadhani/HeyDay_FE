@@ -213,7 +213,7 @@ const LandingPage = () => {
           </h1>
           <div className="col-lg-12 col-md-12 col-12">
             <SlideCard />
-            {/* <Image src={worker?.image} alt="photo" /> */}
+            <Image src={worker?.image} alt="photo" />
           </div>
         </div>
       </SectionPage>

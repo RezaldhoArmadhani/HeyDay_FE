@@ -124,11 +124,15 @@ const EditProfile = () => {
       formData.append("image", saveImage);
 
       const result = await axios
-        .post(`http://localhost:4000/portfolio/addportfo/${id}`, formData, {
-          headers: {
-            "Content-Type": "multipart/form-data",
-          },
-        })
+        .post(
+          `https://heydaybe-production.up.railway.app/portfolio/addportfo/${id}`,
+          formData,
+          {
+            headers: {
+              "Content-Type": "multipart/form-data",
+            },
+          }
+        )
         .then((res) => {
           console.log(res.data);
           toast.success("Your data has been updated!", {
@@ -199,7 +203,10 @@ const EditProfile = () => {
       });
     } else {
       const result = await axios
-        .post(`http://localhost:4000/experiences/add/${id}`, { ...experience })
+        .post(
+          `https://heydaybe-production.up.railway.app/experiences/add/${id}`,
+          { ...experience }
+        )
         .then((res) => {
           // console.log(res.data)
           toast.success("Your data has been updated!", {

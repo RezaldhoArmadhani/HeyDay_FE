@@ -31,16 +31,16 @@ const Hire = () => {
                   className="img-thumbnail rounded-circle"
                 ></Image>
               </div>
-              <h5 className="fw-bolder">Dhimas Pandu Yogaswara</h5>
+              <h5 className="fw-bolder">Rezaldho Armadhani</h5>
               <span className={style.work}>Manager</span>
               <p className={style.address}>
                 <FontAwesomeIcon
                   icon={faLocationDot}
                   style={{ marginRight: "10px" }}
                 />
-                Bekasi
+                Trenggalek
               </p>
-              <span className={style.worker}>Freelancer</span>
+              <span className={style.worker}>Programmer</span>
               <p className={style.bio}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Vestibulum erat orci, mollis nec gravida sed, ornare quis urna.
@@ -80,7 +80,7 @@ const Hire = () => {
           >
             <div className="row ">
               <div className="col-12 col-md-11">
-                <h3 className="fw-bolder">Hubungi Dhimas Pandu Yogaswara</h3>
+                <h3 className="fw-bolder">Hubungi Rezaldho Armadhani</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
                   euismod ipsum et dui rhoncus auctor.

@@ -48,10 +48,13 @@ const Register = () => {
       e.preventDefault();
       const passwordValidated = await checkPasswordMatch(data.password);
       axios
-        .post("http://localhost:4000/recruiters/register", {
-          ...data,
-          password: passwordValidated,
-        })
+        .post(
+          "https://heydaybe-production.up.railway.app/recruiters/register",
+          {
+            ...data,
+            password: passwordValidated,
+          }
+        )
         .then((response) => {
           toast.success("Success Registration !", {
             position: toast.POSITION.TOP_RIGHT,

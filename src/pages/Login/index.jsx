@@ -15,7 +15,7 @@ const Login = () => {
   const handleSubmitRecruiter = async (e) => {
     e.preventDefault();
     const response = await axios.post(
-      `http://localhost:4000/recruiters/login`,
+      `https://heydaybe-production.up.railway.app/recruiters/login`,
       {
         email,
         password,
