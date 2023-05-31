@@ -8,7 +8,7 @@
     <br />
     <a href="https://hey-day-fe.vercel.app/">View Demo</a>
     <br />
-    <a href="heydaybe-production.up.railway.app">Api Demo</a>
+    <a href="https://heydaybe-production.up.railway.app">Api Demo</a>
   </p>
 </p>
 
@@ -101,7 +101,7 @@ REACT_APP_ENDPOINT = [BACKEND_URL]
     <td>Search Worker</td>
   </tr>
   <tr>
-    <td><img width="350px" src="./doc/Profile Worker.png"  border="0" border="0" alt="3" /> </td>
+    <td><img width="350px" src="./doc/Worker.png"  border="0" border="0" alt="3" /> </td>
     <td><img width="350px" src="./doc/Profile Recruiter.png"  border="0" border="0" alt="4" /></td>
   </tr>
    <tr>
@@ -125,7 +125,7 @@ REACT_APP_ENDPOINT = [BACKEND_URL]
     <td>Add Experience</td>
   </tr>
   <tr>
-    <td><img width="350px" src="./doc/Hire Button.png"  border="0" border="0" alt="4" /></td>
+    <td><img width="350px" src="./doc/Hire.png"  border="0" border="0" alt="4" /></td>
   </tr>
    <tr>
     <td>Hire Button</td>
