@@ -1,14 +1,14 @@
 <p align="center">
 <div align="center">
-  <img height="150" src="./doc/earlybirds_icon.png" alt="heyday-logo" border="0"/>
+  <img height="150" src="./doc/Logoo.png" alt="heyday-logo" border="0"/>
 </div>
   <h3 align="center">HeyDay App</h3>
   <p align="center">
     <a href="https://RezaldhoArmadhani/Heyday_FE"><strong>Explore the docs »</strong></a>
     <br />
-    <a href="">Belum Deploy</a>
+    <a href="https://hey-day-fe.vercel.app/">View Demo</a>
     <br />
-    <a href="">Belum Deploy</a>
+    <a href="heydaybe-production.up.railway.app">Api Demo</a>
   </p>
 </p>
 
@@ -32,7 +32,7 @@
 
 ## About The Project
 
-HeyDay adalah aplikasi perekrutan yang dirancang untuk membantu pengguna menemukan pekerjaan dengan lebih mudah melalui aplikasi tersebut. Aplikasi ini memungkinkan pengguna untuk membuat profil profesional, dan mencari pekerjaan, serta menerima notifikasi tentang pekerjaan yang sesuai dengan kriteria yang telah ditentukan. HeyDay juga menyediakan fitur interaksi antara pengguna dengan perekrut atau perusahaan yang sedang mencari tenaga kerja untuk memudahkan proses komunikasi dan seleksi. Dengan menggunakan HeyDay, pengguna dapat memaksimalkan peluang mereka untuk mendapatkan pekerjaan yang diinginkan secara efektif dan efisien.
+HeyDay is a recruiting application designed to help users find jobs more easily through the application. This application allows users to create professional profiles, and search for jobs, and receive notifications about jobs that match predetermined criteria. HeyDay also provides an interaction feature between users and recruiters or companies looking for workers to facilitate the communication and selection process. By using HeyDay, users can maximize their chances of getting the desired job effectively and efficiently.
 
 <!-- GETTING STARTED -->
 
@@ -58,7 +58,7 @@ git clone https://github.com/RezaldhoArmadhani/HeyDay_FE
 - Go To Folder Repo
 
 ```
-cd ui
+cd HeyDay_FE
 ```
 
 - Install Module
@@ -84,8 +84,8 @@ REACT_APP_ENDPOINT = [BACKEND_URL]
 
 <table>
  <tr>
-    <td><img width="350px" src="./doc/login.png"  border="0" border="0" alt="1" /></td>
-    <td> <img width="350px" src="./doc/register.png" \ border="0"  border="0"  border="0"  alt="2" /></td>
+    <td><img width="350px" src="./doc/Login.png"  border="0" border="0" alt="1" /></td>
+    <td> <img width="350px" src="./doc/Register.png" \ border="0"  border="0"  border="0"  alt="2" /></td>
   </tr>
    <tr>
     <td>Login</td>
@@ -93,42 +93,42 @@ REACT_APP_ENDPOINT = [BACKEND_URL]
   </tr>
 
   <tr>
-    <td><img width="350px" src="./doc/landing.png"  border="0" border="0" alt="3" /> </td>
-     <td><img width="350px" src="./doc/detail.png"  border="0" border="0" alt="4" /></td>
+    <td><img width="350px" src="./doc/Landing.png"  border="0" border="0" alt="3" /> </td>
+     <td><img width="350px" src="./doc/Search Worker.png"  border="0" border="0" alt="4" /></td>
   </tr>
    <tr>
     <td>Landing</td>
-    <td>Detail</td>
+    <td>Search Worker</td>
   </tr>
   <tr>
-    <td><img width="350px" src="./doc/profile-seller.png"  border="0" border="0" alt="3" /> </td>
-    <td><img width="350px" src="./doc/profile-customer.png"  border="0" border="0" alt="4" /></td>
+    <td><img width="350px" src="./doc/Profile Worker.png"  border="0" border="0" alt="3" /> </td>
+    <td><img width="350px" src="./doc/Profile Recruiter.png"  border="0" border="0" alt="4" /></td>
   </tr>
    <tr>
-    <td>Profile Seller</td>
-    <td>Profile Customer</td>
+    <td>Profile Worker</td>
+    <td>Profile Recruiter</td>
   </tr>
    <tr>
-    <td><img width="350px" src="./doc/mybag.png"  border="0" border="0" alt="3" /> </td>
-    <td><img width="350px" src="./doc/checkout.png"  border="0" border="0" alt="4" /></td>
+    <td><img width="350px" src="./doc/Edit Worker.png"  border="0" border="0" alt="3" /> </td>
+    <td><img width="350px" src="./doc/Experience.png"  border="0" border="0" alt="4" /></td>
   </tr>
    <tr>
-    <td>Mybag</td>
-    <td>Checkout</td>
+    <td>Edit Worker</td>
+    <td>Experience</td>
   </tr>
    <tr>
-    <td><img width="350px" src="./doc/address.png"  border="0" border="0" alt="3" /> </td>
-    <td><img width="350px" src="./doc/add-product.png"  border="0" border="0" alt="4" /></td>
+    <td><img width="350px" src="./doc/Add Portfolio.png"  border="0" border="0" alt="3" /> </td>
+    <td><img width="350px" src="./doc/Add Experience.png"  border="0" border="0" alt="4" /></td>
   </tr>
    <tr>
-    <td>Address</td>
-    <td>Add Product</td>
+    <td>Add Portfolio</td>
+    <td>Add Experience</td>
   </tr>
   <tr>
-    <td><img width="350px" src="./doc/update-product.png"  border="0" border="0" alt="4" /></td>
+    <td><img width="350px" src="./doc/Hire Button.png"  border="0" border="0" alt="4" /></td>
   </tr>
    <tr>
-    <td>Update Product</td>
+    <td>Hire Button</td>
   </tr>
 </table>
 <!-- CONTRIBUTING -->
@@ -149,6 +149,6 @@ Contributions are what make the open source community such an amazing place to b
 
 :rocket: [`Frontend HeyDay`](https://RezaldhoArmadhani/HeyDay_FE)
 
-:rocket: [`Belum Deploy`]
+:rocket: [`Demo HeyDay`](https://hey-day-fe.vercel.app/)
 
 Project Link: [https://github.com/RezaldhoArmadhani/HeyDay_FE](https://github.com/RezaldhoArmadhani/HeyDay_FE)
