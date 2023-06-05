@@ -3,17 +3,16 @@ const nextConfig = {
   reactStrictMode: false,
 
   env: {
-    API_BACKEND: 'http://localhost:4000/',
+    API_BACKEND: "https://heydaybe-production.up.railway.app/",
   },
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'res.cloudinary.com',
+        protocol: "https",
+        hostname: "res.cloudinary.com",
       },
     ],
   },
-}
+};
 
-module.exports = nextConfig
-
+module.exports = nextConfig;
